@@ -114,9 +114,9 @@ goto fail
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
+pause
 if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
 exit /b 1
-pause
 goto end
 
 REM set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_162
