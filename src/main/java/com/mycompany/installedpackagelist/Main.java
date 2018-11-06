@@ -65,19 +65,19 @@ public class Main {
                     + "Description from App Brain" + csvSeparator + "App Brain URL" + csvSeparator
                     + "Packet name" + csvSeparator + "Is package name found?" + System.lineSeparator());
             String line;
-            
+
             String playStoreUrl = "https://play.google.com/store/apps/details?id=";
             String getApkUrl = "http://getapk.co/apk/";
             String apkPureUrl = "https://apkpure.com/apk/";
             String appBrainUrl = "http://www.appbrain.com/app/";
-            
+
             /*
             String url[] = new String[5];
             url[1] = "https://play.google.com/store/apps/details?id=";
             url[2] = "http://getapk.co/apk/";
             url[3] = "https://apkpure.com/apk/";
             url[4] = "http://www.appbrain.com/app/";
-            */      
+             */
             System.out.println("Installed Package List (c) Tomasz Szymański");
             System.out.println("Found " + result + " installed packages:");
             while ((line = bufferreader.readLine()) != null) {
@@ -124,8 +124,7 @@ public class Main {
                     System.out.println("Failed. ");
                 }
                 }
-                */
-                
+                 */
                 try {
                     System.out.print("Trying Play Store...");
                     String[] appResp = getTitleDesc(playStoreUrl, "<div class=\"id-app-title\" tabindex=\"0\">", "</div>",
@@ -193,7 +192,7 @@ public class Main {
                     urlOut4 = "";
                     System.out.println("Failed. ");
                 }
-                
+
                 if (success) {
                     appNameOut = appName;
                     //przerobić na list.add
